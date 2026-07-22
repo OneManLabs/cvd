@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Node
+node_modules/
+dist/
+
+# Models (large files)
+models/*.pt
+models/*.onnx
+!models/.gitkeep
+!models/yolo11n.onnx
+
+# Local model exports and checkpoints
+*.pt
+*.onnx
+*.tflite
+*.mlpackage/
+*_saved_model/
+calibration_image_*.npy
+!models/yolo11n.onnx
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local application data and prototypes
+datasets/**
+!datasets/.gitkeep
+runs/
+V0 redesign/
+atak overview.md
+.claude/
+.env
+.env.*
+!.env.example
+
+# Public documentation images
+!docs/
+!docs/images/
+!docs/images/**
